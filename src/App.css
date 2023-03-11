@@ -1,0 +1,85 @@
+:root {
+  --bg: hsl(0, 0%, 98%);
+  --bg-offset: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --gray: hsl(0, 0%, 52%);
+  --border: rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 50%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background: var(--bg);
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  height: 18px;
+}
+
+.wrapper {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.card-grid {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 48px;
+}
+
+.card {
+  background-color: var(--bg-offset);
+  padding: 10px;
+  box-shadow: 0px 2px 4px var(--border);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-content {
+  display: block;
+  -webkit-line-clamp: none;
+  -webkit-box-orient: none;
+  overflow: visible;
+}
+
+.card-image {
+  max-height: 150px;
+}
+
+.card-image {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-list {
+  margin-top: 16px;
+}
+
+.card-list li {
+  color: var(--text);
+  margin-top: 15px;
+}
+
+.card-list li {
+  color: var(--gray);
+  margin: 10px;
+}
